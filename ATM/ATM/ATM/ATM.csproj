@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B57CAC17-377C-4E40-8EF3-3D5BF311C723}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATM</RootNamespace>
+    <AssemblyName>ATM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>touch screen kiosk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Controls.Win" />
+    <Reference Include="Stimulsoft.Editor, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design.SLViewer, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Win, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankCard.Designer.cs">
+      <DependentUpon>BankCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListBardasht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListBardasht.Designer.cs">
+      <DependentUpon>frmListBardasht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmovement.Designer.cs">
+      <DependentUpon>frmmovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_New_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_New_Account.Designer.cs">
+      <DependentUpon>frm_New_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BankCard.resx">
+      <DependentUpon>BankCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListBardasht.resx">
+      <DependentUpon>frmListBardasht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmovement.resx">
+      <DependentUpon>frmmovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_New_Account.resx">
+      <DependentUpon>frm_New_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbar -Regular -Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10801logo-Azad-University1.png" />
+    <None Include="Resources\10801logo-Azad-University.png" />
+    <None Include="Resources\azad_university_2_173021.png" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\Folder -_áBurn.ico" />
+    <None Include="Resources\1546080253_B4eH4.jpg" />
+    <None Include="Resources\1546080253_B4eH5.jpg" />
+    <None Include="Resources\Toon Icon 038.ico" />
+    <None Include="Resources\Toon Icon 036.ico" />
+    <None Include="Resources\bundle.ico" />
+    <None Include="Resources\Toon Icon 003.ico" />
+    <None Include="Resources\Toolbar -Regular -Delete1.ico" />
+    <None Include="Resources\bundle1.ico" />
+    <None Include="Resources\Folder -_áDrop Box .ico" />
+    <None Include="Resources\Toolbar -_áRegular -_áGet Info.ico" />
+    <None Include="Resources\Undo.ico" />
+    <None Include="Resources\database.ico" />
+    <None Include="Resources\deepblue Icon 13.ico" />
+    <None Include="Resources\logo-png.png" />
+    <None Include="Resources\logo-png1.png" />
+    <None Include="Resources\logo-png2.png" />
+    <None Include="Resources\logo-png3.png" />
+    <None Include="Resources\logo-png4.png" />
+    <None Include="Resources\logo-png5.png" />
+    <None Include="Resources\logo-png6.png" />
+    <None Include="Resources\logo-png7.png" />
+    <None Include="Resources\logo-png8.png" />
+    <None Include="Resources\Move.png" />
+    <None Include="Resources\Password.png" />
+    <None Include="Resources\SplashImage.jpg" />
+    <Content Include="touch screen kiosk.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
